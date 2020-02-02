@@ -1,2 +1,0 @@
-# kurs
-Sve za kurs :)
