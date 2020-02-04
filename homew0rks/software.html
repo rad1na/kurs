@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Software order form</title>
+</head>
+<body>
+<form>
+    <h1>Software Order Form</h1>
+    License details
+    <table>
+        <tr>
+            <td><ul>
+                    <li>Email address<input type="text" required name="email"></li>
+                    <li>Website <input type="text" placeholder="http://www.example.com/" name="website" required></li>
+                    <li>Number of licenses <input type="number" placeholder="How many to buy (1-10" required></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    Billing Details
+    <table>
+        <tr>
+            <td><ul>
+                    <li>Name<input type="text" required name="name" placeholder="First Last" required></li>
+                    <li>Address<textarea name="address" placeholder="House number,stree,city,state" required></textarea></li>
+                    <li>Postal code<input type="number" placeholder="Post code or zip code"></li>
+                    <li>Country 
+                        <select name="country" required>
+                            <option value="tanzania">Tanzania</option>
+                            <option value="australia" selected>Australia</option>
+                            <option value="serbia">Serbia</option>
+                            <option value="montenegro">Montenegro</option>
+                            <option value="cuba">Cuba</option>
+                        </select>
+                    </li>
+                    <li>Phone(optional)<input type="text" name="phone" placeholder="Include country prefix, e.g."></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    Payment Details
+    <table>
+        <tr>
+            <td>
+                <ul>
+                    <li>Card number <input type="text" placeholder="as shown on the front of yo..." name="cardNum" required></li>
+                    <li>CVV code <input type="number" min="100" max="999" name="cvv" placeholder="3-digit num" required></li>
+                    <li>Expiry date <input type="text" name="expiryDate" placeholder="YYYY-MM" required></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Place Your Order">
+    </form>
+    <h1><a href="./pregled.html">Nazad na pregled radova</a></h1>
+</body>
+</html>

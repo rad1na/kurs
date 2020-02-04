@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    
+    td{border: 1px solid black}
+    #nesto{border: 1px black}
+    
+    </style>
+    <form action="">
+    <table style="border: 1px solid black;">
+        <tr>
+            <th colspan="5">Pizza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" maxlength="20" name="ime" required></td>
+        </tr>
+        <tr>
+            <td>Pizza Topping</td>
+            <td><input type="radio" name="rad" value="supreme">Supreme<br><input type="radio" name="rad" value="vegetarian">Vegetarian<br>
+            <input type="radio" name="rad" value="hawaiian">Hawaiian
+            </td>
+        </tr>
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+                <select name="sauce">
+                <option value="tomato">Tomato</option>
+                <option value="garlic">Garlic</option>
+                <option value="hotSauce">Hot Sauce</option>
+                <option value="mayo">Mayo</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Optional Extras</td>
+            <td><input type="checkbox" value="extraCheese" name="box">Extra Cheese <input type="checkbox" value="glutenFree" name="box">Gluten Free Base</td>
+        </tr>
+        <tr>
+            <td colspan="5">Delivery Instructions:<br><textarea maxlength="100" name="instrukcije" required></textarea></td>
+        </tr>
+        <tr>
+            <td id="nesto"><input type="submit" value="Send My Order"></td>
+        </tr>
+    </table>
+    <h1><a href="./pregled.html">Nazad na pregled radova</a></h1>
+</form>   
+</body>
+</html>
